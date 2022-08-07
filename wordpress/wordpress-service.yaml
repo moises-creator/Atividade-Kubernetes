@@ -8,8 +8,9 @@ metadata:
 spec:
   ports:
     - port: 80
+      NodePort: 30001
       protocol: TCP
   selector:
     app: wordpress
     tier: frontend
-  type: LoadBalancer
+  type: NodePort
