@@ -33,9 +33,9 @@ spec:
         - containerPort: 80
           name: wordpress
         volumeMounts:
-        - name: wordpress-persistent-storage
+        - name: wordpresspersistent-storage-lab
           mountPath: /var/www/html
       volumes:
-      - name: wordpress-persistent-storage
+      - name: wordpresspersistent-storage-lab
         persistentVolumeClaim:
           claimName: wp-pv-claim
