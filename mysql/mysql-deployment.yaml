@@ -27,9 +27,9 @@ spec:
         - containerPort: 3308
           name: mysql
         volumeMounts:
-        - name: mysql-persistent-storagelab
+        - name: mysqlpersistent-storagelab-lab
           mountPath: /var/lib/mysql
       volumes:
-      - name: mysql-persistent-storagelab
+      - name: mysqlpersistent-storagelab-lab
         persistentVolumeClaim:
           claimName: mysql-pv-claim
