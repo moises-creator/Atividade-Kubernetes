@@ -1,18 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: mysql
+  name: wordpress-mysql
   namespace: labwordpress
 spec:
   selector:
     matchLabels:
-      app: mysql
+      app: wordpress
+      tier: mysql
   strategy:
     type: Recreate
   template:
     metadata:
       labels:
-        app: mysql
+        app: wordpress
+        tier: mysql
     spec:
       containers:
       - image: mysql:5.6
