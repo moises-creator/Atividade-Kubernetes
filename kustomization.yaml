@@ -1,8 +1,8 @@
 resources:
-  - mysql-secret.yaml
-  - mysql-service.yaml
-  - mysql-pvclaim.yaml
-  - mysql-deployment.yaml
-  - wordpress-service.yaml
-  - wordpress-pvclaim.yaml
-  - wordpress-deployment.yaml
+  - mysql/mysql-secret.yaml
+  - mysql/mysql-service.yaml
+  - mysql/mysql-pvclaim.yaml
+  - mysql/mysql-deployment.yaml
+  - wordpress/wordpress-service.yaml
+  - wordpress/wordpress-pvclaim.yaml
+  - wordpress/wordpress-deployment.yaml
